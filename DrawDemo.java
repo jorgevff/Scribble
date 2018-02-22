@@ -118,4 +118,18 @@ public class DrawDemo
         
     }
     
+    /**
+     * Crea poligonos de n lados, n se pasa por parametro
+     */
+    public void drawPolygon(int numeroLados)
+    {
+        Pen pen = new Pen(200, 200, myCanvas);
+        pen.setColor(Color.CYAN);
+        
+        for(int i=0; i<numeroLados; i++){
+            pen.move(150);
+            pen.turn(360/numeroLados);
+        }
+        
+    }
 }
